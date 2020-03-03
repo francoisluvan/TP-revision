@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="entete.css" />
+    <title>entete</title>
+</head>
+<body>
+  <header>
+    <div id="entete">
+      <img class="logo" src="logo.jpg" alt="logo"/>
+      <h1>Au pays des voyages...</h1>
+    </div>
+    <nav>
+      <ul>
+        <li> <a href="http://google.com"> Accueil</a> </li>
+        <li> <a href="http://google.com"> Séjour </a> </li>
+        <li> <a href="http://google.com"> Circuit </a> </li>
+        <li> <a href="http://google.com"> Croisière </a> </li>
+        <li> <a href="http://google.com"> Vol+Hôtel </a> </li>
+        <li> <a href="http://google.com"> Hôtel </a> </li>
+        <li> <a href="http://google.com"> Promos </a> </li>
+        <li> <a href="http://google.com"> Inspiration </a> </li>
+      </ul>
+    </nav>
+  </header>
+
+  <br>
+
+<section id="section">
+  <!-- Travaillé sous Chrome. Le formulaire s'affiche mal sur firefox -->
+  <form action="contact" method="post">
+    <fieldset id = "fieldset1">
+      <legend> Votre prestation : </legend>
+      <div>
+          <label for="séjour">Séjour</label>
+          <input type="radio" id="séjour" name="prestation">
+          <label for="Circuit">Circuit</label>
+          <input type="radio" id="circuit" name="prestation">
+          <label for="Croisière">Croisière</label>
+          <input type="radio" id="Croisière" name="prestation">
+      </div>
+    </fieldset>
+    <fieldset id="fieldset2">
+      <legend> Vos choix : </legend>
+        <div>
+            <label for="destination">Destination</label>
+            <select type="select" id="destination" name="destination">
+              <option value="Corse">
+                Corse
+              </option>
+              <option value="Grèce">
+                Grèce
+              </option>
+              <option value="Italie">
+                Italie
+              </option>
+            </select>
+        </div>
+        <div>
+            <label for="Ville de départ">Ville de départ :</label>
+            <select type="select" id="Ville de départ" name="Ville de départ">
+              <option value="Paris">
+                Paris
+              </option>
+              <option value="Marseille">
+                Marseille
+              </option>
+              <option value="Lyon">
+                Lyon
+              </option>
+            </select>
+        </div>
+        <div>
+            <label for="durée">Durée :</label>
+            <select type="select" id="durée" name="durée">
+              <option value="3 jours">
+                3 jours
+              </option>
+              <option value="1 semaine">
+                1 semaine
+              </option>
+              <option value="1 mois">
+                1 mois
+              </option>
+            </select>
+        </div>
+        <div>
+        <label for="date">Date du départ :</label>
+        <input id="date" type=date value="jj/mm/aaaa">
+        </div>
+    </fieldset>
+    <div>
+      <input id="valider" type=submit value=valider >
+    </div>
+  </form>
+  <img class="cocotiers" src="cocotiers.jpg" alt="cocotiers"/>
+</section>
+
+</body>
+</html>

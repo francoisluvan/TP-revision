@@ -1,0 +1,48 @@
+html {
+  width:100%;
+  font-family: arial;
+}
+
+#header {
+  background-color: red;
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#header div {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#partiecentrale {
+  display:flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+img {
+  border-radius: 1em;
+  width:24%;
+}
+
+header {
+  color : white;
+  font-weight: bold;
+}
+
+h2, .paragraphe {
+  color: darkgrey;
+}
+
+h3 {
+  color: #0177bf;
+  width:24%;
+}
+
+section p {
+  width:24%;
+  border: solid 1px orange;
+}
